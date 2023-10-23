@@ -1,4 +1,6 @@
+/* Styles CSS */
 
+/* Styles pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
@@ -7,6 +9,7 @@ body {
     padding: 0;
 }
 
+/* Styles pour l'en-tête */
 header {
     background-color: #111;
     padding: 10px;
@@ -14,6 +17,8 @@ header {
     position: relative;
 }
 
+/* Styles pour les titres à gauche et à droite de l'en-tête */
+.left-h2,
 .right-h2 {
     position: absolute;
     top: 10px;
@@ -27,16 +32,19 @@ header {
     right: 10px;
 }
 
+/* Styles pour le titre principal de l'en-tête */
 header h1 {
     margin: 0;
 }
 
+/* Styles pour le conteneur principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Styles pour la section "Nos vidéos populaires" */
 .videos {
     display: flex;
     flex-wrap: wrap;
@@ -44,11 +52,14 @@ header h1 {
     justify-content: center;
 }
 
+/* Styles pour chaque vidéo */
 .video {
     background-color: #333;
     border-radius: 8px;
     overflow: hidden;
     width: 200px;
+    display: inline-block;
+    margin: 5px;
 }
 
 .video img {
@@ -56,6 +67,7 @@ header h1 {
     height: auto;
 }
 
+/* Styles pour le pied de page */
 footer {
     background-color: #111;
     padding: 10px;
@@ -65,27 +77,49 @@ footer {
     width: 100%;
 }
 
+/* Styles pour les sections de catégories */
 .category {
     margin-top: 30px;
     padding: 20px;
     background-color: #333;
 }
 
+/* Styles pour les titres des catégories */
 .category h2 {
     color: #fff;
 }
 
+/* Styles pour la section de vidéos de chaque catégorie */
 .category-videos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start; /* Vous pouvez changer ceci à "center" si nécessaire */
 }
 
+/* Styles pour les images des vidéos de chaque catégorie */
 .category-videos .video img {
     width: 100%;
     height: auto;
 }
 
+/* Styles pour cacher les vidéos supplémentaires */
+.video.hidden {
+    display: none;
+}
 
+/* Styles pour les boutons "Suivant" */
+.next-button {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+/* Styles pour positionner les boutons "Suivant" à droite */
+.next-button {
+    float: right;
+    margin-right: 10px;
+}
