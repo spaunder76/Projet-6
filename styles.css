@@ -99,7 +99,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start; /* Vous pouvez changer ceci à "center" si nécessaire */
+    justify-content: flex-start; 
 }
 
 /* Styles pour les images des vidéos de chaque catégorie */
@@ -135,16 +135,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 300px; /* Ajustez la hauteur selon vos besoins */
+    min-height: 300px; 
 }
 
 /* Styles pour chaque vidéo dans la catégorie "top rated film" */
 #top-rated-movies .video {
-    /* Supprimez la largeur fixe pour centrer le contenu */
     width: auto;
-    max-width: 100%; /* Pour s'adapter à la largeur de la div */
+    max-width: 100%; 
 }
-/* Styles for the modal */
+/* Styles pour la fenetre modale */
 .modal {
     display: none;
     position: fixed;
