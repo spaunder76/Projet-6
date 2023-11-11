@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OCMovies</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="jquery.js"></script>
-  <script src="index.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCMovies</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+  </head>
 <body>
   <header>
     <h1>OCMovies</h1>
@@ -15,92 +14,41 @@
     <h1>Catégories</h1>
   </header>
   <div class="container">
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-image" src="" alt="">
+          <h3 id="modal-title"></h3>
+          <p id="modal-genre"></p>
+          <p id="modal-release-date"></p>
+          <p id="modal-rated"></p>
+          <p id="modal-imdb-score"></p>
+          <p id="modal-directors"></p>
+          <p id="modal-actors"></p>
+          <p id="modal-duration"></p>
+          <p id="modal-country"></p>
+          <p id="modal-box-office"></p>
+          <p id="modal-summary"></p>
+      </div>
+  </div>
     <h2>Film le mieux noté</h2>
     <div id="top-rated-movies" class="category-videos">
       <!-- Contenu du film le mieux noté -->
-      <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modal-image" src="" alt="">
-            <h3 id="modal-title"></h3>
-            <p id="modal-genre"></p>
-            <p id="modal-release-date"></p>
-            <p id="modal-rated"></p>
-            <p id="modal-imdb-score"></p>
-            <p id="modal-directors"></p>
-            <p id="modal-actors"></p>
-            <p id="modal-duration"></p>
-            <p id="modal-country"></p>
-            <p id="modal-box-office"></p>
-            <p id="modal-summary"></p>
-        </div>
-    </div>
     </div>
     <h2>Horror</h2>
     <div id="Horror" class="category-videos">
       <!-- Contenu de la catégorie Horror -->
       <button class="prev-button" data-category="Horror">Précédent</button> <button class="next-button" data-category="Horror">Suivant</button>
-      <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modal-image" src="" alt="">
-            <h3 id="modal-title"></h3>
-            <p id="modal-genre"></p>
-            <p id="modal-release-date"></p>
-            <p id="modal-rated"></p>
-            <p id="modal-imdb-score"></p>
-            <p id="modal-director"></p>
-            <p id="modal-actors"></p>
-            <p id="modal-duration"></p>
-            <p id="modal-country"></p>
-            <p id="modal-box-office"></p>
-            <p id="modal-summary"></p>
-        </div>
-    </div>
     </div>
     <h2>Action</h2>
     <div id="Action" class="category-videos">
       <!-- Contenu de la catégorie Action -->
       <button class="prev-button" data-category="Action">Précédent</button> <button class="next-button" data-category="Action">Suivant</button>
-      <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modal-image" src="" alt="">
-            <h3 id="modal-title"></h3>
-            <p id="modal-genre"></p>
-            <p id="modal-release-date"></p>
-            <p id="modal-rated"></p>
-            <p id="modal-imdb-score"></p>
-            <p id="modal-director"></p>
-            <p id="modal-actors"></p>
-            <p id="modal-duration"></p>
-            <p id="modal-country"></p>
-            <p id="modal-box-office"></p>
-            <p id="modal-summary"></p>
-        </div>
-    </div>
     </div>
     <h2>Romance</h2>
     <div id="Romance" class="category-videos">
       <!-- Contenu de la catégorie Romance -->
       <button class="prev-button" data-category="Romance">Précédent</button> <button class="next-button" data-category="Romance">Suivant</button>
-      <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modal-image" src="" alt="">
-            <h3 id="modal-title"></h3>
-            <p id="modal-genre"></p>
-            <p id="modal-release-date"></p>
-            <p id="modal-rated"></p>
-            <p id="modal-imdb-score"></p>
-            <p id="modal-director"></p>
-            <p id="modal-actors"></p>
-            <p id="modal-duration"></p>
-            <p id="modal-country"></p>
-            <p id="modal-box-office"></p>
-            <p id="modal-summary"></p>
-        </div>
-    </div>
     </div>
   </div>
 </body>
